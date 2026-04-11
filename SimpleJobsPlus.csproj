@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net48</TargetFramework>
+    <AssemblyName>SimpleJobsPlus</AssemblyName>
+    <RootNamespace>SimpleJobsPlus</RootNamespace>
+    <OutputType>Library</OutputType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="Source\JobsPlugin.cs" />
+    <Compile Include="Source\JobsConfig.cs" />
+    <Compile Include="Source\PlayerJobData.cs" />
+    <Compile Include="Source\CommandSetJob.cs" />
+    <Compile Include="Source\CommandMyJob.cs" />
+    <Compile Include="Source\CommandJobChat.cs" />
+    <Compile Include="Source\CommandDailyTask.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- Adjust these HintPaths to your Unturned server install -->
+    <Reference Include="Assembly-CSharp">
+      <HintPath>..\..\Libraries\Managed\Assembly-CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>..\..\Libraries\Managed\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="Rocket.Core">
+      <HintPath>..\..\Libraries\Rocket.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Rocket.Unturned">
+      <HintPath>..\..\Libraries\Rocket.Unturned.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>
