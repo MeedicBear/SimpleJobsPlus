@@ -1,35 +1,54 @@
 <Project Sdk="Microsoft.NET.Sdk">
+
   <PropertyGroup>
     <TargetFramework>net48</TargetFramework>
     <AssemblyName>SimpleJobsPlus</AssemblyName>
     <RootNamespace>SimpleJobsPlus</RootNamespace>
-    <OutputType>Library</OutputType>
+    <GenerateAssemblyInfo>true</GenerateAssemblyInfo>
+    <Platforms>AnyCPU;x64</Platforms>
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Include="Source\JobsPlugin.cs" />
-    <Compile Include="Source\JobsConfig.cs" />
-    <Compile Include="Source\PlayerJobData.cs" />
-    <Compile Include="Source\CommandSetJob.cs" />
-    <Compile Include="Source\CommandMyJob.cs" />
-    <Compile Include="Source\CommandJobChat.cs" />
-    <Compile Include="Source\CommandDailyTask.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <!-- Adjust these HintPaths to your Unturned server install -->
     <Reference Include="Assembly-CSharp">
-      <HintPath>..\..\Libraries\Managed\Assembly-CSharp.dll</HintPath>
+      <HintPath>Lib\Assembly-CSharp.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine">
-      <HintPath>..\..\Libraries\Managed\UnityEngine.dll</HintPath>
+      <HintPath>Lib\UnityEngine.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>Lib\UnityEngine.CoreModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Rocket.API">
+      <HintPath>Lib\Rocket.API.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="Rocket.Core">
-      <HintPath>..\..\Libraries\Rocket.Core.dll</HintPath>
+      <HintPath>Lib\Rocket.Core.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="Rocket.Unturned">
-      <HintPath>..\..\Libraries\Rocket.Unturned.dll</HintPath>
+      <HintPath>Lib\Rocket.Unturned.dll</HintPath>
+      <Private>False</Private>
     </Reference>
+	  <Reference Include="com.rlabrecque.steamworks.net">
+		  <HintPath>Lib\com.rlabrecque.steamworks.net.dll</HintPath>
+		  <Private>False</Private>
+	  </Reference>
+	  <Reference Include="UnityEngine.AudioModule">
+		  <HintPath>Lib\UnityEngine.AudioModule.dll</HintPath>
+		  <Private>False</Private>
+	  </Reference>
+	  <Reference Include="UnityEngine.PhysicsModule">
+		  <HintPath>Lib\UnityEngine.PhysicsModule.dll</HintPath>
+		  <Private>False</Private>
+	  </Reference>
+	  <Reference Include="UnityEngine.AssetBundleModule">
+		  <HintPath>Lib\UnityEngine.AssetBundleModule.dll</HintPath>
+		  <Private>False</Private>
+	  </Reference>
   </ItemGroup>
+
 </Project>
